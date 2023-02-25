@@ -90,7 +90,7 @@ class Number:
         returns: bool
         """
         palin = str(self.value)[::-1]
-        return palin == self.value
+        return int(palin) == self.value
     def get_digits(self):
         """
         Returns a list of all the digits in the number.
@@ -166,4 +166,4 @@ class Number:
 number = Number(36)
 # print(number.get_number())
 # print(number.is_even())
-print(number.get_reverse())
+print(number.is_palindrome())
