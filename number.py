@@ -162,7 +162,7 @@ class Number:
     
 
 # Create a new instance of Number
-number = Number(31)
+number = Number(131)
 # print(number.get_number())
 # print(number.is_even())
 print(number.is_prime())
