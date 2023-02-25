@@ -34,12 +34,11 @@ class Number:
 
         returns: bool
         """
-        x = range(2, self.value)
-        for i in x:
-            if self.value % i != 0:
-                return True
-            else: 
+        for i in  range(2, (self.value//2)+1):
+            if self.value % i == 0:
                 return False
+            else:
+                return True
 
     def get_divisors(self):
         """
@@ -163,7 +162,7 @@ class Number:
     
 
 # Create a new instance of Number
-number = Number(36)
+number = Number(31)
 # print(number.get_number())
 # print(number.is_even())
-print(number.is_palindrome())
+print(number.is_prime())
